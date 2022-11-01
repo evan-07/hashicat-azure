@@ -7,6 +7,7 @@
 
 variable "prefix" {
   description = "This prefix will be included in the name of most resources."
+  default     = "mytf"
 }
 
 variable "location" {
@@ -26,7 +27,8 @@ variable "subnet_prefix" {
 
 variable "vm_size" {
   description = "Specifies the size of the virtual machine."
-  default     = "Standard_B1s"
+  #  default     = "Standard_B1s" #removing to pass the tfc-workshops-bonuslab/azure-restrict-vm-size
+  default = "Standard_D2_v2"
 }
 
 variable "image_publisher" {
